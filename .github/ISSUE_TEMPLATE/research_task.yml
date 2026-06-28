@@ -1,0 +1,33 @@
+name: Research Task
+description: Track bank, payroll, payment rail, or compliance research.
+title: "[Research]: "
+labels:
+  - research
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research Question
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources To Review
+      description: Link public sources or describe non-secret documents.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected Output
+      description: What decision, doc, issue, or test should this unblock?
+    validations:
+      required: true
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Data Safety
+      options:
+        - label: No real worker, payroll, bank, tax, credential, or secret data will be posted.
+          required: true

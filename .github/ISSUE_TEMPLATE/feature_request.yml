@@ -1,0 +1,34 @@
+name: Feature Request
+description: Propose an in-scope PayRails capability.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or contributor problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the smallest useful version of the feature.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundaries
+      options:
+        - label: This does not require storing real secrets in the repository.
+          required: true
+        - label: This does not claim PayRails is a bank, payment processor, or tax filing service.
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Compliance Or Bank Notes
+      description: List assumptions, unknowns, or review needed.

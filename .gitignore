@@ -1,0 +1,51 @@
+# Local environment
+.env
+.env.*
+!.env.example
+*.local
+
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Payroll, bank, and export data
+exports/
+payroll-files/
+bank-files/
+nacha-files/
+*.ach
+*.nacha
+*.aba
+*.qbo
+*.ofx
+*.csv
+*.xlsx
+*.xls
+*.pdf
+
+# Runtime and dependency output
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.nuxt/
+.turbo/
+.cache/
+
+# Python output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
