@@ -5,6 +5,11 @@ and replaceable adapters. The architecture should make payroll rules, pay run
 state, pay stub generation, audit behavior, and export validation testable
 without live bank systems or hosted infrastructure.
 
+The first workflows should be simple enough for small organizations, but the
+architecture should not assume that PayRails will only ever serve small teams.
+Organization size, approval complexity, storage backend, deployment model, and
+bank transmission method should remain replaceable design choices.
+
 ## Static ES Modules
 
 All JavaScript and TypeScript implementation code should use static ES modules:
@@ -78,6 +83,8 @@ flow from core logic into infrastructure.
 
 - Keep payroll calculation, pay run workflow, pay stub shaping, file export,
   adapter validation, audit logging, and confirmation tracking separable.
+- Avoid hard-coding small-organization assumptions into core entities,
+  permissions, audit events, or pay run limits.
 - Make each bank adapter independently testable with synthetic fixtures.
 - Make country-specific payment rail logic replaceable.
 - Keep UI and storage choices replaceable by depending on ports from the core.

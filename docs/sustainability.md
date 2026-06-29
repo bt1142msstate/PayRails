@@ -9,7 +9,8 @@ sustainable.
 
 - Keep the essential payroll coordination toolkit available as open source.
 - Fund ongoing development of the free core.
-- Make it possible to pay for convenience, support, hosting, and custom work.
+- Make it possible for organizations of different sizes to pay for convenience,
+  support, hosting, and custom work.
 - Be transparent about what is free, what is paid, and why.
 - Avoid creating pressure to make unsafe banking, payroll, tax, or compliance
   claims.

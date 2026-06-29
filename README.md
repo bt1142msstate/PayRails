@@ -1,9 +1,13 @@
 # PayRails
 
 PayRails is a free, open-source payroll and direct-deposit coordination toolkit
-for small organizations that need bank-ready files, pay stubs, approval
-workflows, and clear setup guidance without being locked into expensive payroll
-software.
+for organizations that need bank-ready files, pay stubs, approval workflows, and
+clear setup guidance without being locked into expensive payroll software.
+
+The first users are expected to be small organizations with practical payroll
+coordination needs, but the long-term goal is broader: PayRails should be
+architected so organizations of any size can adopt, extend, self-host, or build
+on it.
 
 ## Project Status
 
@@ -45,14 +49,19 @@ forms, or other private payroll data to this repository.
 ## Mission
 
 Build a free, open-source payroll and direct-deposit coordination toolkit that
-helps small organizations pay people without being locked into expensive payroll
-software when they only need bank-ready files, pay stubs, approval workflows, and
+helps organizations pay people without being locked into expensive payroll
+software when they need bank-ready files, pay stubs, approval workflows, and
 clear setup guidance.
 
 This is a general-purpose project, not an afterschool-specific module. It should
 be usable by small businesses, nonprofits, churches, education programs,
 creators, local service businesses, community groups, and other organizations
 that need a practical payroll/direct-deposit workflow.
+
+The initial product should stay especially approachable for small organizations,
+because they are often the most underserved by payroll tooling. That should not
+mean hard-coding small-organization assumptions into the data model,
+architecture, permissions, audit model, or adapter system.
 
 The goal is to make the software layer around payroll and direct deposit as open
 and affordable as possible while still respecting that banks, payment rails,

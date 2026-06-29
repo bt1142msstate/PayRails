@@ -4,10 +4,16 @@ This roadmap tracks the work that is clearly in scope for the open-source core.
 It does not imply that PayRails is ready for real payroll, tax filing, or bank
 submission.
 
+The early roadmap prioritizes small organizations because they are likely to be
+the first practical users. The long-term design goal is a toolkit that can be
+adopted by organizations of any size without rewriting the core model.
+
 ## Phase 0: Research And Specs
 
 - Define the core data model for organizations, workers, payment profiles, pay
   periods, pay runs, pay stubs, bank adapters, exports, and audit records.
+- Identify where organization size affects permissions, approvals, limits,
+  audit requirements, storage, and adapter configuration.
 - Document security requirements for bank account data, encryption, masking,
   access control, deletion, and retention.
 - Gather generic ACH/NACHA requirements from public documentation.
