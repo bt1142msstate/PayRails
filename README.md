@@ -23,6 +23,8 @@ tax documents.
   payroll, privacy, and tax boundaries for contributors.
 - [docs/adapter-model.md](docs/adapter-model.md): first draft of the bank and
   payment rail adapter model.
+- [docs/sustainability.md](docs/sustainability.md): donation, sponsorship, and
+  paid offering principles.
 - [CONTRIBUTING.md](CONTRIBUTING.md): how to contribute safely.
 - [SECURITY.md](SECURITY.md): how to report security concerns and handle
   sensitive payroll/bank data.
@@ -261,14 +263,32 @@ This can be both:
 1. A standalone open-source GitHub project.
 2. A reusable module inside larger organization-management platforms.
 
-Possible business model:
+## Funding And Sustainability
 
-- Free/open-source core.
-- Free bank setup guides.
-- Optional paid setup support.
+PayRails should be free and open-source at its core, but it also needs a
+realistic path to fund ongoing development, maintenance, security review,
+documentation, and bank adapter work.
+
+Possible sustainability paths:
+
+- Donations or sponsorships from users, organizations, and supporters.
+- Optional paid setup support for organizations that want help getting started.
 - Optional custom bank adapter development.
-- Optional hosted version for organizations that do not want to self-host.
-- Optional accountant/payroll review services through partners later.
+- Optional hosted or managed version for organizations that do not want to
+  self-host.
+- Optional premium features that fund both the premium product and the free
+  open-source core.
+- Optional accountant, payroll, or compliance review services through partners
+  later.
+
+The free core should continue to include the essential payroll coordination,
+pay stub, export, adapter, and audit primitives needed for self-hosted use. Paid
+offerings should focus on convenience, hosting, support, advanced automation,
+customization, and services rather than locking away the basic ability to run a
+payroll/direct-deposit workflow.
+
+See [docs/sustainability.md](docs/sustainability.md) for the current funding
+principles.
 
 ## Early Build Phases
 

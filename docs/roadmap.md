@@ -14,6 +14,8 @@ submission.
 - Gather Regions-specific setup and export requirements from public or
   customer-provided non-secret documentation.
 - Define synthetic test fixture rules for ACH/NACHA validation.
+- Define the donation, sponsorship, and premium offering boundaries that can
+  fund development without weakening the open-source core.
 
 ## Phase 1: Core Pay Run And Pay Stub Engine
 

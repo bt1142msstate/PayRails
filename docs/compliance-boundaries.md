@@ -42,3 +42,13 @@ Bank adapters must document their source of truth and uncertainty. A bank
 adapter should not claim support for submission methods, cutoff times, limits,
 fees, or return behavior unless that information is verified from reliable bank
 documentation or a user-provided non-secret source.
+
+## Commercial Offering Boundaries
+
+Donations, sponsorships, paid setup, hosted plans, premium features, and partner
+services can help fund development, but commercial offerings must not blur the
+project's banking, payroll, tax, privacy, or security boundaries.
+
+Paid offerings should state clearly what they provide, what they do not provide,
+and when a customer still needs bank, accountant, payroll, legal, or compliance
+review.
