@@ -14,6 +14,8 @@ submission.
 - Gather Regions-specific setup and export requirements from public or
   customer-provided non-secret documentation.
 - Define synthetic test fixture rules for ACH/NACHA validation.
+- Define the static ES module architecture, package boundaries, and dependency
+  rules before scaffolding application code.
 - Define the donation, sponsorship, and premium offering boundaries that can
   fund development without weakening the open-source core.
 

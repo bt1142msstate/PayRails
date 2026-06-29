@@ -3,6 +3,11 @@
 PayRails should isolate bank and payment rail differences behind adapters so the
 core payroll workflow can stay consistent.
 
+Adapters should be implemented as static ES modules in JavaScript or TypeScript
+packages. The core package should depend only on adapter interfaces and shared
+types; concrete bank, file, browser-extension, SFTP, host-to-host, or API
+adapters should depend on the core contracts rather than the other way around.
+
 ## Core Adapter Responsibilities
 
 Each adapter should define:
@@ -42,6 +47,8 @@ Each adapter should define:
 
 - Keep bank credentials and secrets outside adapter source code.
 - Do not store bank portal usernames or passwords in PayRails.
+- Keep adapter side effects at the edge so validation and file generation can be
+  tested without live bank systems.
 - Require explicit owner approval before export or submission.
 - Record export hashes, totals, confirmation references, and audit events.
 - Stop automated or assisted flows when screens, MFA, CAPTCHA, limits, or

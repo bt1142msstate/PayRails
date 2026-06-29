@@ -23,6 +23,8 @@ tax documents.
   payroll, privacy, and tax boundaries for contributors.
 - [docs/adapter-model.md](docs/adapter-model.md): first draft of the bank and
   payment rail adapter model.
+- [docs/architecture.md](docs/architecture.md): static ES module and modularity
+  principles for the first implementation.
 - [docs/sustainability.md](docs/sustainability.md): donation, sponsorship, and
   paid offering principles.
 - [CONTRIBUTING.md](CONTRIBUTING.md): how to contribute safely.
@@ -91,6 +93,26 @@ SFTP, host-to-host file transfer, a bank API, or a browser extension assistant.
 - Failed/returned payment tracking.
 - Owner/accountant review exports.
 - Future W-2/payroll tax export helpers.
+
+## Architecture Direction
+
+The first implementation should use static ES modules for JavaScript and
+TypeScript code. Core packages should expose explicit `import` and `export`
+boundaries, avoid CommonJS, and keep dynamic loading out of the domain layer.
+
+PayRails should optimize for low coupling and high modularity:
+
+- Domain logic should not import app, database, bank portal, PDF renderer,
+  hosted-service, or premium-product code.
+- Bank and payment rail differences should live behind adapter interfaces.
+- Infrastructure should depend on the core; the core should not depend on
+  infrastructure.
+- Public package exports should be intentional and narrow.
+- Tests should be able to exercise core payroll, pay stub, validation, audit,
+  and export behavior with synthetic fixtures and without live bank services.
+
+See [docs/architecture.md](docs/architecture.md) for the implementation
+principles.
 
 ## What This Should Not Do At First
 
